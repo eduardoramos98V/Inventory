@@ -1,18 +1,9 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
   import { getFirestore, collection, addDoc, getDocs, onSnapshot, deleteDoc,  getDoc, doc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js"
+  import { firebaseConfig } from './firebase-config.js';
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyBMGzQzPdiZep2-fTb89DaQ1dqn6M1j7qE",
-    authDomain: "inv-equ.firebaseapp.com",
-    projectId: "inv-equ",
-    storageBucket: "inv-equ.firebasestorage.app",
-    messagingSenderId: "82077583335",
-    appId: "1:82077583335:web:46cee98b8022746cd95f42"
-  };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
